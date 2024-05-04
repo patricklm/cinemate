@@ -1,8 +1,12 @@
 <template>
   <div>
-    <section>
+    <section
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+    >
       <h1 class="text-5xl font-extrabold dark:text-white">Featured Movies</h1>
-      <ul class="grid grid-cols-5 gap">
+      <ul
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto my-8"
+      >
         <li v-for="mov in movies" :key="mov.id">
           <MovieCard
             :poster_path="mov.poster_path"
@@ -16,11 +20,15 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+    >
       <h1 class="text-5xl font-extrabold dark:text-white">
         Featured Tv Series
       </h1>
-      <ul class="grid grid-cols-5 gap">
+      <ul
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto my-8"
+      >
         <li v-for="ser in series" :key="ser.id">
           <SeriesCard
             :poster_path="ser.poster_path"

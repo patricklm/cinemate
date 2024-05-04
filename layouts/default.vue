@@ -6,9 +6,9 @@
       >
         <NuxtLink
           to="/"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
+          class="flex items-center space-x-2 rtl:space-x-reverse"
         >
-          <img src="/logo.png" class="h-8" alt="Cinamate Logo" />
+          <img src="/logo.png" class="h-12" alt="Cinamate Logo" />
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
             >Cinemate</span

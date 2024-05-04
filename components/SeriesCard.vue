@@ -1,9 +1,13 @@
 <template>
   <div
-    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+    class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
   >
     <NuxtLink @click="changeItemState(item)" :to="`/item/${name}`">
-      <img class="rounded-t-lg" :src="`${imageSiteUrl}${poster_path}`" alt="series image" />
+      <img
+        class="rounded-t-lg"
+        :src="`${imageSiteUrl}${poster_path}`"
+        alt="series image"
+      />
     </NuxtLink>
     <div class="p-5">
       <span>
